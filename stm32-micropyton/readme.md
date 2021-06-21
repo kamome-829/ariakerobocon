@@ -1,15 +1,18 @@
 # stm32へmicropythonでのプログラム書き込み
 
 - stm32へマイクロパイソンのプログラムを書き込むには内部ファイルシステムを使用する必要がある。下記参考リンク
-[AboutMe](https://micropython-docs-ja.readthedocs.io/ja/latest/esp8266/tutorial/filesystem.html)
+[マイクロパイソン内部ファイルシステム](https://micropython-docs-ja.readthedocs.io/ja/latest/esp8266/tutorial/filesystem.html)
 
 - 手順
 - まずは新規にファイルを作成するファイルを作成するには次のようにする。
 
->>> f = open('data.txt', 'w')
->>> f.write('some data')
+>>>f = open('data.txt', 'w')
+
+>>>f.write('some data')
+
 9
->>> f.close()
+
+>>>f.close()
 
 - “9”は書き込まれたバイト数。このコマンドを使用してプログラムを書き込む。
 そのため('some data')の部分に書いたプログラムを入れる必要がある。しかし直接プログラムを入れてもmicropythonは理解できないので工夫する必要がある。
@@ -22,7 +25,7 @@
 
 - 次に
 
->>> f.write('')
+>>>f.write('')
 
 は400文字（もしかしたら200文字かも）までしか一度に書き込めないので400文字以内で改行をする。
 

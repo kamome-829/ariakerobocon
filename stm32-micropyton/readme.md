@@ -1,7 +1,7 @@
 # stm32へmicropythonでのプログラム書き込み
 
-- stm32へマイクロパイソンのプログラムを書き込むには内部ファイルシステムを使用する必要がある。下記参考リンク
-[マイクロパイソン内部ファイルシステム](https://micropython-docs-ja.readthedocs.io/ja/latest/esp8266/tutorial/filesystem.html)
+- stm32へマイクロパイソンのプログラムを書き込むには内部ファイルシステムを使用する必要がある。
+[参考リンク（マイクロパイソン内部ファイルシステム）](https://micropython-docs-ja.readthedocs.io/ja/latest/esp8266/tutorial/filesystem.html)
 
 - 手順
 - まずは新規にファイルを作成するファイルを作成するには次のようにする。
